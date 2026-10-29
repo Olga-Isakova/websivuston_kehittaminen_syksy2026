@@ -1,0 +1,102 @@
+
+body {
+    background-color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+h1 {
+    font-size: 3em;
+  }
+
+h2 {
+    font-size: 2em;
+  }
+
+p {
+    color: darkblue;
+  }
+
+.introduction-text {
+    border: 1px solid darkslategray;
+    background-color: white;
+    border-left: 5px solid darkslategray;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+li {
+    color: darkblue;
+  }
+
+.content-box-image {
+    padding: 10px;
+    margin: 30px;
+    background-color: darkslategray;
+    border: 1px solid #ccc;
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+  }
+
+th {
+    background-color: slategray;
+}
+
+.game {
+    font-style: italic;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.project-text {
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: white;
+    border-left: 5px solid darkslategray;
+    padding-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 25px;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
