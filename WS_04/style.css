@@ -1,0 +1,315 @@
+
+body {
+  background-color: lightcyan;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+h1 {
+  font-size: 3em;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+p, li {
+  color: darkblue;
+}
+
+/* Navigation bar */
+
+.navigation-bar {
+  display: flex;   /* Position on the same line */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: darkslategray;
+  text-align: center;
+}
+
+.navigation-item a {
+  color: white;
+  text-decoration: none; /* Remove the standard link's underlining */
+  display: block; 
+  padding: 10px 15px;
+}
+
+.navigation-item a:hover {
+  background-color: lightcyan;
+  color: darkblue;
+}
+
+/* Animation */
+
+.animation-track {
+  flex-grow: 1;
+  min-width: 30px;
+  height: 40px;
+  position: relative;
+}
+
+.animation-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: darkslategray;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  animation: move 3s infinite alternate ease-in-out;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 30px);
+    background-color: white;
+  }
+}
+
+/* Section About */
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+/* Left column vs. right column (image) */
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Left column: flex items */
+
+.introduction-text {
+  border: 1px solid darkslategray;
+  background-color: white;
+  border-left: 5px solid darkslategray;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.hobbies-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+}
+
+/* Hobbies list as flex items */
+
+.hobbies-grid {
+    color: darkblue;
+    padding: 10px 15px;
+  }
+
+.hobbies-grid:nth-child(1) {
+  background-color: rgb(150, 207, 243);
+}
+
+.hobbies-grid:nth-child(1):hover {
+  background-color: rgba(150, 207, 243, 0.5);
+}
+
+.hobbies-grid:nth-child(2) {
+  background-color: rgb(135, 216, 135);
+}
+
+.hobbies-grid:nth-child(2):hover {
+  background-color: rgb(135, 216, 135, 0.5);
+}
+
+.hobbies-grid:nth-child(3) {
+  background-color: rgb(134, 171, 202);
+}
+
+.hobbies-grid:nth-child(3):hover {
+  background-color: rgb(134, 171, 202, 0.5);
+}
+
+/* Right column image and filter */
+
+.content-box-image {
+  padding: 10px;
+  background-color: darkgreen;
+  border: 1px solid #ccc;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+  
+/* Section Background: flex box for 2 items, mobile first */
+
+
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+th {
+  background-color: slategray;
+}
+
+.game {
+  font-style: italic;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* Blockquote */
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  margin: 40px 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: '“';
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
+
+  /* Collaboration: flex container  */
+
+.collaboration {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}  
+
+.collaboration-text {
+  border: 1px solid darkslategray;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: white;
+  border-left: 5px solid darkslategray;
+  padding: 0 15px;
+}
+
+.transition-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.transition-button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 25px;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+/* Flex container */
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: darkgreen;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive box */
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 801px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}

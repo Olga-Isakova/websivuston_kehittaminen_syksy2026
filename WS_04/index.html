@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Isakova</title>
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:darkslategrey">Welcome to my page!</h1>
+        <nav>
+            <ul class="navigation-bar">
+                <li class="navigation-item"><a href="#about">About</a></li>
+                <li class="navigation-item"><a href="#hobbies">My hobbies</a></li>
+                <li class="navigation-item"><a href="my-projects">My projects</a></li>
+                <li class="navigation-item"><a href="languages">Languages</a></li>
+                <li class="navigation-item"><a href="collaboration">Collaboration</a></li>
+                <li class="animation-track">
+                    <div class="animation-box"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="left-column">
+                <div class="introduction-text">
+                    <p>I am Olga Isakova, a first-year student in the Digital Services Development programme at Laurea University of Applied Sciences. Here, you can follow my first steps in HTML, CSS, and Responsive design.</p>
+                    <p>To learn more about the Digital Services Development programme, visit <a href="https://www.laurea.fi/tutkintokoulutukset/tietojenkasittely/">Laurea's website.</a></p>
+                </div>
+                <div class="hobbies">
+                    <h2>My hobbies:</h2>
+                    <ul class="hobbies-list">
+                        <li class="hobbies-grid">Cooking</li>
+                        <li class="hobbies-grid">Going to a library</li>
+                        <li class="hobbies-grid">Dancing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-image right-column">
+                <img class="content-box-image filter-image" src="../WS_01/Picture_of_Olga.jpg" alt="Picture of Olga" width="240">
+                <!-- <div class="animation-box"></div> -->
+            </div>
+        </section>
+
+        <section class="background">        
+            <div class="my-projects">
+                <h2>My previous front-end projects:</h2>
+                <ol>
+                    <li>Single-page online school website</li>
+                    <li>Online shop:
+                        <ul>
+                            <li>Landing page</li>
+                            <li>Catalog page</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="languages">      
+                <h2>Previously studied languages:</h2>
+                <table>
+                    <tr>
+                        <th>Programming languages</th>
+                        <th>JavaScript</th>
+                        <th>Python</th>
+                    </tr>
+                    <tr>
+                        <td>Common uses</td>
+                        <td>Web development</td>
+                        <td>Automation, data analysis, and AI</td>
+                    </tr>
+                    <tr>
+                        <td>Game-based learning applications</td>
+                        <td class="game">Grasshopper</td>
+                        <td class="game">Mimo</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <blockquote class="quote">
+            <p>Great things in business are never done by one person. They're done by a team of people.</p>
+                <cite>— Steve Jobs, <a href="https://www.cbsnews.com/news/steve-jobs-in-his-own-words/">Steve Jobs in His Own Words, CBS News (2011)</a></cite>
+        </blockquote>
+
+        <section class="collaboration">       
+            <div class="collaboration-text">
+                <h2>Would you like...<br>to work on a project together?</h2>
+                <button class="transition-button">Yes!</button>
+                <p>Leave your name and email in the form below, and we will find a project that matches our common interests.</p>
+            </div>
+            
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="examples-flex-grid">
+            <h2>Examples of Flex and Grid elements</h2>
+            <div class="flex-container">
+                <div class="box">Flex 1</div>
+                <div class="box">Flex 2</div>
+                <div class="box">Flex 3</div>
+            </div>
+    
+            <div class="grid-container">
+                <div class="grid-item">Grid 1</div>
+                <div class="grid-item">Grid 2</div>
+                <div class="grid-item">Grid 3</div>
+                <div class="grid-item">Grid 4</div>
+                <div class="grid-item">Grid 5</div>
+                <div class="grid-item">Grid 6</div>
+            </div>
+
+            <div class="responsive-box">Resize the window to see the effect</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026</p>
+    </footer>
+
+</body>
+</html>
